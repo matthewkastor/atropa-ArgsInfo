@@ -1,6 +1,6 @@
 {
     "name": "atropa-ArgsInfo",
-    "version": "2013.09.27-2431",
+    "version": "2013.09.28-244",
     "description": "A sort of type checker for JavaScript functions.",
     "main": "./src/atropa-ArgsInfo.js",
     "directories": {
@@ -45,6 +45,7 @@
     "dependencies": {
         "atropa-header": "git+https://github.com/matthewkastor/atropa-header.git#master",
         "atropa-inquire": "git+https://github.com/matthewkastor/atropa-inquire.git#master",
-        "atropa-arrays": "git+https://github.com/matthewkastor/atropa-arrays.git#master"
+        "atropa-arrays": "git+https://github.com/matthewkastor/atropa-arrays.git#master",
+        "atropa-customErrors": "git+https://github.com/matthewkastor/atropa-customErrors.git#master"
     }
 }
