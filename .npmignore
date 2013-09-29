@@ -1,6 +1,6 @@
 logs/
 *npm-debug.log
-npm_modules/
+node_modules/
 
 #############
 ## Windows detritus
