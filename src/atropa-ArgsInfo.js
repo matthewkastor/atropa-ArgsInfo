@@ -6,8 +6,33 @@
  * @namespace Container for all Glorious classes, functions, etc.
  */
 var atropa = require('atropa-header');
+/**
+ * Required module, the docs for it are in the <code>
+ *  atropa-inquire/docs</code> directory where this module 
+ *  is located.
+ * @see <a href="../../../node_modules/atropa-inquire/docs/jsdoc/index.html">
+ * ../../../node_modules/atropa-inquire/docs/jsdoc/index.html</a>,
+ *  unless you installed this dependency manually.
+ */
 atropa.inquire = require('atropa-inquire').inquire;
+/**
+ * Required module, the docs for it are in the <code>
+ *  atropa-arrays/docs</code> directory where this module 
+ *  is located.
+ * @see <a href="../../../node_modules/atropa-arrays/docs/jsdoc/index.html">
+ * ../../../node_modules/atropa-arrays/docs/jsdoc/index.html</a>,
+ *  unless you installed this dependency manually.
+ */
 atropa.arrays = require('atropa-arrays').arrays;
+/**
+ * Required module, the docs for it are in the <code>
+ *  atropa-customErrors/docs</code> directory where this module 
+ *  is located.
+ * @see <a href="../../../node_modules/atropa-customErrors/docs/jsdoc/index.html">
+ * ../../../node_modules/atropa-customErrors/docs/jsdoc/index.html</a>,
+ *  unless you installed this dependency manually.
+ */
+atropa.customErrors = require('atropa-customErrors').customErrors;
 /// <reference path="../../docs/vsdoc/OpenLayersAll.js"/>
 /*jslint
     indent: 4,
@@ -103,7 +128,7 @@ atropa.ArgsInfo = function ArgsInfo() {
      * 
      * // You may use as many named arrays as you wish and checkArgTypes will
      * // test for a match to at least one of the provided named arrays.
-     * @throws {atropa.InvalidArgumentTypesError} Throws an error if the
+     * @throws {atropa.customErrors.InvalidArgumentTypesError} Throws an error if the
      *  typesObj can not be used to set the expected argument types.
      */
     this.setExpectedArgTypes = function setExpectedArgTypes(typesObj) {
@@ -123,7 +148,7 @@ atropa.ArgsInfo = function ArgsInfo() {
         }
         
         if(error) {
-            throw new atropa.InvalidArgumentTypesError(
+            throw new atropa.customErrors.InvalidArgumentTypesError(
                 'typesObj is expected to be of the form: var typesObj = ' +
                 '{ "namedArgumentTypesArray" : ' +
                 '    ["string", "function", "number"], ' +
@@ -191,14 +216,14 @@ atropa.ArgsInfo = function ArgsInfo() {
      * @param {arguments} args An arguments object
      * @returns {String} The user assigned key which matches the
      * arguments supplied, or throws an error.
-     * @throws {atropa.InvalidArgumentTypesError} Throws an error if no matching
+     * @throws {atropa.customErrors.InvalidArgumentTypesError} Throws an error if no matching
      *  pattern of argument types can be found for <code>args</code>
      * @see atropa.ArgsInfo#setExpectedArgTypes
      */
     this.checkArgTypes = function checkArgTypes(args) {
         var expectedTypes;
         if (Object.keys(expectedArgTypes).length < 1) {
-            throw new atropa.InvalidArgumentTypesError(
+            throw new atropa.customErrors.InvalidArgumentTypesError(
                 'Expected argument types is not set. Use ' +
                 'setExpectedArgTypes(typesObj) to set. typesObj is an ' +
                 'object whose properties are arrays of strings representing ' +
@@ -219,7 +244,7 @@ atropa.ArgsInfo = function ArgsInfo() {
                 }
             }
         }
-        throw new atropa.InvalidArgumentTypesError(
+        throw new atropa.customErrors.InvalidArgumentTypesError(
             'invalid argument type @ atropa.ArgsInfo.checkArgTypes');
     };
 };
