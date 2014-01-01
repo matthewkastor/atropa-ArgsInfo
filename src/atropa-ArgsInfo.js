@@ -1,4 +1,4 @@
-/// <reference path="../../docs/vsdoc/OpenLayersAll.js"/>
+/// <reference path="../docs/vsdoc/OpenLayersAll.js"/>
 var atropa = require('atropa-header');
 atropa.inquire = require('atropa-inquire').inquire;
 atropa.arrays = require('atropa-arrays').arrays;
