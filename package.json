@@ -17,11 +17,11 @@
     "scripts": {
         "test": "jasmine-node specs/",
         "buildBrowserModule": "node dev/browserify.js",
-        "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/",
+        "buildDocs": "jsdoc-toolkit -v -d=./docs/jsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-inquire/src/ node_modules/atropa-arrays/src/ node_modules/atropa-customErrors/src/",
         "lint": "atropa-jslint ./src/atropa-ArgsInfo.js",
         "srcFormat": "atropa-jsformatter ./src/atropa-ArgsInfo.js ./src/atropa-ArgsInfo.js",
         "pretest": "node dev/browserify.js",
-        "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s src/"
+        "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s src/ node_modules/atropa-header/src/ node_modules/atropa-inquire/src/ node_modules/atropa-arrays/src/ node_modules/atropa-customErrors/src/"
     },
     "homepage": "https://github.com/matthewkastor/atropa-ArgsInfo/",
     "bugs": "https://github.com/matthewkastor/atropa-ArgsInfo/issues",
