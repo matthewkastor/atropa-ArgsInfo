@@ -1,6 +1,6 @@
 {
   "name": "atropa-ArgsInfo",
-  "version": "2013.10.19",
+  "version": "2013.10.20",
   "description": "A sort of type checker for JavaScript functions.",
   "main": "./src/atropa-ArgsInfo.js",
   "directories": {
