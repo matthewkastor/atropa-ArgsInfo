@@ -81,7 +81,6 @@ atropa.customErrors = require('atropa-customErrors').customErrors;
  * @class This represents a filter for arguments based on type.
  * @returns {ArgsInfo} Returns an ArgsInfo filter.
  * @requires atropa.arrays.match
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.ArgsInfo">tests</a>
  * @example
  * function myClassyConstructor(takes, a, few, args) {
  *     var expectedArgTypes, checker;
@@ -321,7 +320,6 @@ atropa.inquire = require('atropa-inquire').inquire;
  *  ☭ Hial Atropa!! ☭
  * @version 20130221
  * @namespace Utilities for handling arrays.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.arrays">tests</a>
  */
 atropa.arrays = {};
 /**
@@ -756,7 +754,6 @@ var atropa = require('atropa-header');
  *  Matthew Christopher Kastor-Inare III </a><br />
  *  ☭ Hial Atropa!! ☭
  * @namespace Container for custom Errors.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.customErrors">tests</a>
  */
 atropa.customErrors = {};
 
@@ -946,7 +943,6 @@ var atropa = require('atropa-header');
  *  ☭ Hial Atropa!! ☭
  * @version 20120909
  * @namespace Container for functions that test the state of inputs.
- * @see <a href="../../../AtropaToolboxTests.html?spec=atropa.inquire">tests</a>
  */
 atropa.inquire = {};
 /**
