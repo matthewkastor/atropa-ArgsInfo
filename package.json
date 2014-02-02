@@ -1,6 +1,6 @@
 {
   "name": "atropa-ArgsInfo",
-  "version": "2014.1.2",
+  "version": "2014.2.1",
   "description": "A sort of type checker for JavaScript functions.",
   "main": "./src/atropa-ArgsInfo.js",
   "directories": {
@@ -21,7 +21,7 @@
     "lint": "atropa-jslint ./src/atropa-ArgsInfo.js",
     "srcFormat": "atropa-jsformatter ./src/atropa-ArgsInfo.js ./src/atropa-ArgsInfo.js",
     "pretest": "node dev/browserify.js",
-    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./dev/vsdoc/ -r -s node_modules/atropa-header/src/ src/ node_modules/atropa-inquire/src/ node_modules/atropa-arrays/src/ node_modules/atropa-customErrors/src/"
+    "buildVsdocs": "jsdoc-toolkit -v -d=./docs/vsdoc/ -t=./node_modules/jsdoc-toolkit/templates/vsdoc/ -r -s node_modules/atropa-header/src/ src/ node_modules/atropa-inquire/src/ node_modules/atropa-arrays/src/ node_modules/atropa-customErrors/src/"
   },
   "homepage": "https://github.com/matthewkastor/atropa-ArgsInfo/",
   "bugs": "https://github.com/matthewkastor/atropa-ArgsInfo/issues",
